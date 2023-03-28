@@ -1,0 +1,258 @@
+/*parameter of beacon*/
+html {
+    scroll-behavior: smooth;
+}
+body { /*site body, all elements affected by these settings*/
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    cursor: wait;
+    height: auto;
+}
+.box-bod { /*arrangment box to avoid manipulating the body*/
+    height: auto;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    background-color :rgb(224, 215, 215)
+
+}
+h1 { /*title*/
+    position: relative;
+    color: rgb(18, 16, 16);  
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    margin: 0px;
+}
+p {
+    color: rgb(31, 29, 29);
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    cursor:none ;
+}
+a:hover{
+    cursor: not-allowed;
+}
+/*Top menu*/
+header { /*The bar with all tab to go and with icons*/
+    font-size: 30px;
+    height: 150px;
+    background-color: rgba(4, 3, 29, 1);
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.bvn { /*Welcoming message box with logo*/
+    display:flex;
+    width: 600px;
+    justify-content:center;
+    align-items: center;
+}
+.logo { /*Logo related in the header*/
+    height: 125px;
+    width: 125px;
+    text-align: left;
+}
+.wlc-msg { /*Welcoming*/
+    padding: 15px;
+}
+.center-menu{ /*all the link to the differents tab*/
+    display: flex;
+    width: 1000px;
+    list-style-type: none;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-decoration: none;
+}/* The dropdown container */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+font-size: 30px;
+border: none;
+outline: none;
+color: white;
+padding: 14px;
+background-color: inherit;
+font-family: inherit; /* Important for vertical align on mobile phones */
+margin-top: 0px; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: rgba(192, 177, 255);
+border-radius: 20px;
+color: #382685;
+cursor : not-allowed;
+transition: all ease-out 200ms;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: rgba(153, 153, 153,0.7);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 4px 12px;
+text-decoration: none;
+display: block;
+text-align: center;
+transition: all 250ms ease-out;
+}
+.navbar {
+overflow: hidden;
+font-size: 30px;
+}
+/* Links inside the navbar */
+.navbar a {
+float: left;
+font-size: 30px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+transition: all 250ms ease-out;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd;
+border-radius: 20px;
+transition: all 250ms ease-in;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+border-radius: 20px;
+}
+
+
+/*Center element*/
+.desc{ /*description*/
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    margin: 20px;
+}
+.first-desc {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 30px 10px  rgb(103, 101, 101);
+    border-radius: 50px;
+}
+a.epsi:visited {
+    color: red;
+}
+a.epsi:hover {
+    color : wheat;
+}
+.presentation {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+.passion {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+}
+/*Center manu, presentation*/
+.box-proj {
+    font-size: 20px;
+    border: 2px red solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: auto;
+}
+.proj {
+    border: 2px solid #382685 ;
+    background-color: rgba(240,230,240,0.3);
+    border-radius: 2px;
+}
+.proj-h{
+    display: block;
+}
+.BTS {
+    text-align: center;
+
+}
+.btt {
+    position:fixed;
+	width:40px;
+	height:40px;
+	bottom:100px;
+	right:40px;
+	background-color:rgb(255, 255, 255);
+	border-radius:50px;
+	text-align:center;
+}
+/*Footer*/
+footer {
+    background-color: rgb(14, 13, 37);
+    margin-bottom: 0px;
+    display: block;
+    text-align: center;
+    position: fixed;    
+    width: 100%;
+    bottom: 0px;
+}
+footer p { 
+    margin: 0px;
+    padding: 20PX;
+}
+p.foot{
+    color : white;
+    font-size: 40px;
+}
+@media screen and (max-width:600px){ /*responsiveness*/
+    header { /*The bar with all tab to go and with icons*/
+        font-size: 15px;
+        height: 150px;
+        background-color: rgb(14, 13, 37);
+        width: 600px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .center-menu{ /*all the link to the differents tab*/
+        display: flex;
+        width: 200px;
+        list-style-type: none;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-decoration: none;
+    }
+}
